@@ -1,6 +1,8 @@
-﻿Build started 12/23/2011 1:13:16 AM.
+﻿Build started 12/23/2011 2:02:38 AM.
      1>Project "C:\Users\Me\Desktop\RTS\Testin\Testin\Testin.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
+     1>PrepareForBuild:
+         Creating directory "C:\Users\Me\Desktop\RTS\Testin\Release\".
+       InitializeBuildStatus:
          Creating "Release\Testin.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\SFML\include\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Engine.cpp ImageManager.cpp main.cpp Tile.cpp
@@ -27,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:08.46
+Time Elapsed 00:00:07.98
