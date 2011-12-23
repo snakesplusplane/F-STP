@@ -1,0 +1,17 @@
+﻿Build started 12/18/2011 11:09:56 AM.
+     1>Project "C:\Users\Me\Desktop\Code\Personal\SFMLTest\Testin\Testin\Testin.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Testin.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Me\Desktop\Code\Personal\SFMLTest\Testin\Debug\Testin.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML-1.6\lib\vc2010" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Testin.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Me\Desktop\Code\Personal\SFMLTest\Testin\Debug\Testin.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Me\Desktop\Code\Personal\SFMLTest\Testin\Debug\Testin.lib" /MACHINE:X86 Debug\Testin.exe.embed.manifest.res
+         Debug\main.obj
+     1>LINK : fatal error LNK1104: cannot open file 'sfml-system-d.lib'
+     1>Done Building Project "C:\Users\Me\Desktop\Code\Personal\SFMLTest\Testin\Testin\Testin.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.70
