@@ -1,4 +1,6 @@
 #include "Engine.h"
+#include "Camera.h"
+#include "Graph.h"
 #include <SFML\Graphics.hpp>
 
 Engine::Engine(){}
@@ -7,7 +9,8 @@ Engine::~Engine(){delete window;}
 bool Engine::Init()
 {
 	window = new sf::RenderWindow(sf::VideoMode(800,600,32), "Testing");//change first var for window size
-
+	camera = new Camera(800, 600, 1.0f);
+	graph = new Graph(20,20);
 	if(!window)
 		return false;
 
@@ -26,8 +29,22 @@ void Engine::ProcessInput()
 }
 void Engine::RenderFrame()
 {
-	window->Clear();
-	testTile->Draw(0,0,window);
+
+	int cameraXOffset = camera->GetPosition().x, cameraYOffset = camera->GetPosition().y;
+	Tile* tile;
+	window->Clear();	
+	
+	sf::IntRect bound = camera->GetTileBounds(20);
+
+	for(int y = 0, tileY = bound.Top; y < bound.GetHeight(); y++, tileY++)
+	{
+		for(int x = 0, tileX = bound.Left; x < bound.GetWidth(); x++, tileX++)
+		{
+			tile = graph->getTile(x,y);
+			tile->Draw(
+		}
+	}
+
 	window->Display();
 }
 

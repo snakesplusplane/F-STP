@@ -13,4 +13,16 @@ private:
 public: 
 	Camera(int w, int h, float inSpeed);
 	~Camera();
+	void Move(int x, int y);
+	void MoveCenter(int x, int y);
+	void MoveTowards(int x, int y);
+	void MoveCenterTowards(int x, int y);
+
+	void Update();
+
+	sf::Vector2i GetPosition(){return sf::Vector2i((int)position.x, (int)position.y);}
+	sf::Vector2i GetTileOffset(int tileSize) {return sf::Vector2i((int)position.x % tileSize, (int)position.y % tileSize);}
+
+	sf::IntRect GetTileBounds(int tileSize);
+
 };
