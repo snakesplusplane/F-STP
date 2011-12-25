@@ -1,19 +1,14 @@
-﻿Build started 12/23/2011 2:02:38 AM.
+﻿Build started 12/25/2011 10:46:15 AM.
      1>Project "C:\Users\Me\Desktop\RTS\Testin\Testin\Testin.vcxproj" on node 2 (build target(s)).
-     1>PrepareForBuild:
-         Creating directory "C:\Users\Me\Desktop\RTS\Testin\Release\".
-       InitializeBuildStatus:
-         Creating "Release\Testin.unsuccessfulbuild" because "AlwaysCreate" was specified.
+     1>InitializeBuildStatus:
+         Touching "Release\Testin.unsuccessfulbuild".
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\SFML\include\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Engine.cpp ImageManager.cpp main.cpp Tile.cpp
-         Engine.cpp
-         ImageManager.cpp
-         main.cpp
-         Tile.cpp
-     1>Tile.cpp(13): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>Tile.cpp(13): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\SFML\include\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp
+         Camera.cpp
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Me\Desktop\RTS\Testin\Release\Testin.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\SFML\lib\vc2010 /LIBPATH:..\SFML\lib\vc2010 "sfml-system-s.lib" "sfml-window-s.lib" "sfml-graphics-s.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Testin.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Me\Desktop\RTS\Testin\Release\Testin.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Me\Desktop\RTS\Testin\Release\Testin.lib" /MACHINE:X86 Release\Engine.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Me\Desktop\RTS\Testin\Release\Testin.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\SFML\lib\vc2010 /LIBPATH:..\SFML\lib\vc2010 "sfml-system-s.lib" "sfml-window-s.lib" "sfml-graphics-s.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Testin.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Me\Desktop\RTS\Testin\Release\Testin.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Me\Desktop\RTS\Testin\Release\Testin.lib" /MACHINE:X86 Release\Camera.obj
+         Release\Engine.obj
+         Release\Graph.obj
          Release\ImageManager.obj
          Release\main.obj
          Release\Tile.obj
@@ -29,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.98
+Time Elapsed 00:00:03.73

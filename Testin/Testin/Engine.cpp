@@ -41,7 +41,7 @@ void Engine::RenderFrame()
 		for(int x = 0, tileX = bound.Left; x < bound.GetWidth(); x++, tileX++)
 		{
 			tile = graph->getTile(x,y);
-			tile->Draw(
+			tile->Draw( (x * 20) - cameraXOffset, (y * 20) - cameraYOffset, window);
 		}
 	}
 
