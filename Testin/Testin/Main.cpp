@@ -3,7 +3,7 @@
 
 int main()
 {
-	Engine* engine = new Engine();
+	Engine* engine = new Engine(640, 480, 20);
 
 	try{
 		engine->Start();

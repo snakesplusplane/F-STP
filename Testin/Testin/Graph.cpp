@@ -28,7 +28,23 @@ Tile* Graph::getTile(int x, int y)
 	return map[x][y];
 }
 
-void Graph::LoadGraph()
+void Graph::LoadGraph(ImageManager& imageManager)
 {
-	//EL OH EL NOTHING YET
+		
+	
+
+	Tile* tile;
+
+	for(int y = 0; y < this->h; y++)
+	{
+		for(int x = 0; x < this->w; x++)
+		{
+			if(y%3 == 0)
+				tile = new Tile(imageManager.getImage(1));
+			else
+				tile = new Tile(imageManager.getImage(0));
+
+			AddTile(x,y,tile);
+		}
+	}
 }

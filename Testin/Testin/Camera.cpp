@@ -13,16 +13,18 @@ Camera::Camera(int w, int h, float inSpeed)
 		inSpeed = 1.0;
 
 	this->speed = inSpeed;
+
+	//viewing = new myRect(0,0,w,h);
 }
 
 Camera::~Camera(){}
 
 void Camera::Move(int x, int y)
 {
-	position.x = (float)x;
-	position.y = (float)y;
-	target.x = (float)x;
-	target.y = (float)y;
+	position.x += (float)x;
+	position.y+= (float)y;
+	target.x += (float)x;
+	target.y += (float)y;
 }
 
 void Camera::MoveCenter(int x, int y)
@@ -49,35 +51,39 @@ void Camera::MoveCenterTowards(int x, int y)
 	y = y - (size.y / 2);
 
 	target.x = (float)x;
+	if(target.x <= 0)
+		target.x = 0;
 	target.y = (float)y;
+	if(target.y <= 0)
+		target.y = 0;
 }
 
 void Camera::Update()
 {
-	float x, y, d;
-	float vx, vy, v;
-	x = (float)(target.x - position.x);
-	y = (float)(target.y - position.y);
+	//float x, y, d;
+	//float vx, vy, v;
+	//x = (float)(target.x - position.x);
+	//y = (float)(target.y - position.y);
 
-	if( (x*x + y*y) <= 1)
-	{
-		position.x = target.x;
-		position.y = target.y;
+	//if( (x*x + y*y) <= 1)
+	//{
+	//	position.x = target.x;
+	//	position.y = target.y;
 
-	}
-	else
-	{
-		d = sqrt( (x*x + y*y));
-		v = (d * speed)/60;
+	//}
+	//else
+	//{
+	//	d = sqrt( (x*x + y*y));
+	//	v = (d * speed)/60;
 
-		if(v < 1.0f)
-			v = 1.0f;
+	//	if(v < 1.0f)
+	//		v = 1.0f;
 
-		vx = x * (v/d);
-		vy = y * (v/d);
-		position.x += vx;
-		position.y += vy;
-	}
+	//	vx = x * (v/d);
+	//	vy = y * (v/d);
+	//	position.x += vx;
+	//	position.y += vy;
+	//}
 }
 
 sf::IntRect Camera::GetTileBounds(int tileSize)
@@ -93,6 +99,6 @@ sf::IntRect Camera::GetTileBounds(int tileSize)
 	    if(y % tileSize != 0)
 	        h++;
 	 
-	    return sf::IntRect(x, y, w, h);
+	    return sf::IntRect(x, y,  w, h);
 
 }

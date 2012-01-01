@@ -11,8 +11,15 @@ class Engine
 private:
 	sf::RenderWindow* window;
 	ImageManager imageManager;
+
+	sf::Vector2i videoSize;
+
+	sf::IntRect bound;
+
 	Camera* camera;
 	Graph* graph;
+	int tileSize;
+
 	void LoadImages();
 	Tile* testTile;
 	bool Init();
@@ -20,9 +27,10 @@ private:
 	void RenderFrame();
 	void ProcessInput();
 	void Update();
+	void loadGraph();
 
 public:
-	Engine();
+	Engine(int w, int h, int tileSize);
 	~Engine();
 	void Start();
 };

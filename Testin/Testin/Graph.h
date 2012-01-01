@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include "Tile.h"
+#include "ImageManager.h"
 
 class Graph
 {
@@ -17,7 +18,7 @@ public:
 	void AddTile(int x, int y, Tile* tile);
 	Tile* getTile(int x, int y);
 
-	void LoadGraph();
+	void LoadGraph(ImageManager& imageManager);
 	int getWidth() {return w;}
 	int getHeight() {return h;}
 };

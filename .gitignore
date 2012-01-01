@@ -38,3 +38,7 @@ Thumbs.db
 #DIR
 #########
 ipch/
+Testin/ipch
+Release
+Testin/Release
+Testin/Testin/Release
